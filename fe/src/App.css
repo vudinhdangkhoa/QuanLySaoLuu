@@ -1,0 +1,285 @@
+.App {
+  text-align: center;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #555;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.loading, .error, .no-data {
+  padding: 40px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  border-radius: 4px;
+}
+
+
+.filter-section {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+}
+
+.datetime-input {
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.datetime-input:focus {
+  outline: none;
+  border-color: #009688;
+  box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.1);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+
+.filter-btn,
+.clear-filter-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+  height: 42px;
+}
+
+.filter-btn {
+  background-color: #009688;
+  color: white;
+}
+
+.filter-btn:hover {
+  background-color: #00796b;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 150, 136, 0.3);
+}
+
+.clear-filter-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.clear-filter-btn:hover {
+  background-color: #5a6268;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(108, 117, 125, 0.3);
+}
+
+.filter-btn:active,
+.clear-filter-btn:active {
+  transform: translateY(0);
+}
+
+
+.backup-list {
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.backup-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.backup-table thead tr {
+  background-color: #009688;
+  color: #ffffff;
+  text-align: left;
+}
+
+.backup-table th,
+.backup-table td {
+  padding: 15px;
+  border: 1px solid #dddddd;
+}
+
+.backup-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.backup-table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.backup-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.user-info {
+  line-height: 1.4;
+}
+
+.user-info strong {
+  color: #333;
+}
+
+.user-info small {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.path-cell {
+  max-width: 250px;
+  word-break: break-all;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.refresh-btn, .export-btn {
+  background-color: #009688;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.refresh-btn:hover {
+  background-color: #00796b;
+}
+
+
+.export-btn {
+  background-color: #4CAF50;
+}
+
+.refresh-btn:hover {
+  background-color: #00796b;
+}
+
+.export-btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.export-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-btn, .delete-btn {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #f57c00;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+.backup-table th:last-child,
+.backup-table td:last-child {
+  text-align: center;
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .backup-table {
+    font-size: 14px;
+  }
+  
+  .backup-table th,
+  .backup-table td {
+    padding: 10px 8px;
+  }
+  
+  .path-cell {
+    max-width: 150px;
+  }
+}
