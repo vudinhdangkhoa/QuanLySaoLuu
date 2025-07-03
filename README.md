@@ -41,7 +41,7 @@ Trước khi chạy được hệ thống, cần đảm bảo các công cụ sa
 
 ---
 
-### 🌐 Frontend (`/fe` folder)
+###  Frontend (`/fe` folder)
 
 1. Mở một cửa sổ VS Code mới và truy cập thư mục `fe`:
    
